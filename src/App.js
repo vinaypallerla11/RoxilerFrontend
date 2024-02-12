@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TransactionsBarChart from './TransactionsBarChart';
+import './App.css'
 
 const TransactionsTable = () => {
   const [months, setMonths] = useState([]);
@@ -93,7 +94,7 @@ const TransactionsTable = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h1>Transactions Table and Charts</h1>
 
       <input
